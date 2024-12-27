@@ -105,5 +105,9 @@ app.post('/linear-webhook', async (req, res) => {
     }
 });
 
+app.get('/', (req, res) => res.send('Hello World!'));
+
 const PORT = 5050;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+module.exports = app;
